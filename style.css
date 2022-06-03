@@ -16,15 +16,12 @@ html {
 body {
   font-family: var(--font-family);
 
-  background: #f99bbe;
-  background: -webkit-radial-gradient(top left, #f99bbe, #3c62eb);
-  background: -moz-radial-gradient(top left, #f99bbe, #3c62eb);
-  background: radial-gradient(to bottom right, #f99bbe, #3c62eb);
+  background-image: linear-gradient(to bottom, #09203f 0%, #537895 100%);
 
   background-repeat: no-repeat;
   background-size: cover;
 
-  color: #333;
+  color: #fefefe;
 }
 
 /* utilities */
@@ -41,15 +38,15 @@ ul {
   display: inline-block;
   padding: 1rem 2rem;
   text-decoration: none;
-  color: #fff;
-  background-color: #333;
+  color: #09203f.;
+  background-color: #fefefe;
   border-radius: 5rem;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .btn:hover {
-  color: #333;
-  background-color: #fff;
+  color: #fefefe;
+  background-color: #09203f;
 }
 
 .container {
@@ -85,7 +82,7 @@ nav {
   font-size: 1.25rem;
   font-weight: 600;
   text-decoration: none;
-  color: #333;
+  color: #fefefe;
 }
 
 .nav-links {
@@ -97,7 +94,7 @@ nav {
 
 .nav-link {
   text-decoration: none;
-  color: #333;
+  color: #fefefe;
 
   transition: color 0.2s ease-out;
 }
@@ -144,14 +141,18 @@ nav {
 
 .collection-item {
   text-align: center;
-
   padding: 2rem 0;
-
-  backdrop-filter: blur(10px) saturate(200%);
-  -webkit-backdrop-filter: blur(10px) saturate(200%);
-  background-color: rgba(255, 255, 255, 0);
   border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.collection-item-1 {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.collection-item-2 {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+.collection-item-3 {
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
 .collection-item-title {
