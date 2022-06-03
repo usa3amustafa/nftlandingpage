@@ -19,15 +19,25 @@ const hideNav = () => navbar.classList.remove('show-nav')
 
 openNav.addEventListener('click', showNav)
 closeNav.addEventListener('click', hideNav)
-navLinks.forEach(link => link.addEventListener('click', hideNav))
+navLinks.forEach(link =>
+  link.addEventListener('click', e => {
+    if (e.target.classList.contains('dropdown-link')) return
+    else hideNav()
+  })
+)
 
 // show dropdown
 
-dropdownLink.addEventListener('click', () => {
-  dropdownLinks.classList.toggle('show-dropdown')
-})
+document.addEventListener('click', e => {
+  const isDropDown = e.target.matches('[data-dropdown-btn]')
 
-document.querySelector('body').addEventListener('click', e => {
-  e.target.classList.contains('dropdown-link') ||
-    dropdownLinks.classList.remove('show-dropdown')
+  if (!isDropDown && e.target.closest('[data-dropdown]') !== null) return
+
+  let currentDropDown
+
+  if (isDropDown) {
+    currentDropDown = e.target.closest('[data-dropdown]')
+
+    currentDropDown.classList.toggle('active')
+  }
 })
