@@ -95,7 +95,40 @@ nav {
 }
 
 .nav-link:hover {
-  color: #03208b;
+  color: rgb(27, 56, 163);
+}
+
+.dropdown-link {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-links {
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-link-item {
+  color: #fefefe;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  background: #09203f;
+
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.dropdown-link-item:hover {
+  background-color: #fefefe;
+  color: #09203f;
+}
+
+.show-dropdown {
+  height: 160px;
 }
 
 /* header */
