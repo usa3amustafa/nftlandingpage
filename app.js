@@ -26,3 +26,8 @@ navLinks.forEach(link => link.addEventListener('click', hideNav))
 dropdownLink.addEventListener('click', () => {
   dropdownLinks.classList.toggle('show-dropdown')
 })
+
+document.querySelector('body').addEventListener('click', e => {
+  e.target.classList.contains('dropdown-link') ||
+    dropdownLinks.classList.remove('show-dropdown')
+})
