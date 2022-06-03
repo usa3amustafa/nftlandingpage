@@ -40,4 +40,10 @@ document.addEventListener('click', e => {
 
     currentDropDown.classList.toggle('active')
   }
+
+  document.querySelectorAll('[data-dropdown].active ').forEach(dropdown => {
+    if (dropdown === currentDropDown) return
+
+    dropdown.classList.remove('active')
+  })
 })

@@ -132,7 +132,7 @@ nav {
   color: rgb(27, 56, 163);
 }
 
-.dropdown > .nav-link:focus + .dropdown-menu {
+.dropdown.active > .nav-link + .dropdown-menu {
   opacity: 1;
   pointer-events: auto;
 }
