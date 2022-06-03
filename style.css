@@ -152,14 +152,12 @@ nav {
 
 .collection-item-title {
   margin-bottom: 0.25rem;
-  transform: translateZ(30px);
 }
 
 .collection-item-desc {
   font-size: 0.9rem;
   max-width: 30ch;
   margin: 0 auto;
-  transform: translateZ(30px);
 }
 
 /* about / newsletter */
