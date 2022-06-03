@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Landing Page</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawsome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- js -->
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <div class="container nav">
+        <a href="./index.html" class="logo">
+          <h2 class="logo-title">Logo</h2>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#collection" class="nav-link">Shop Now</a></li>
+          <li>
+            <a href="#about" class="nav-link">About the Project</a>
+          </li>
+          <li>
+            <a href="#newsletter" class="nav-link">Get Exciting News</a>
+          </li>
+          <li><a href="#footer" class="nav-link">Find Us Online</a></li>
+          <i class="fa-solid fa-xmark close"></i>
+        </ul>
+
+        <i class="fa-solid fa-bars hamburger"></i>
+      </div>
+    </nav>
+
+    <!-- banner / header -->
+    <header>
+      <div class="container header">
+        <div class="header-left-col">
+          <h2 class="header-left-col-title">
+            Discover and collect extra ordinary
+            <span class="red">monster</span> NFTs
+          </h2>
+
+          <p class="header-left-col-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Numquam, ad. Laboriosam veritatis sed officiis dolore!
+          </p>
+
+          <a href="#" class="btn cta"
+            >Collect Now &nbsp; <i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="header-right-col">
+          <img src="./img/robo.png" alt="robo NFT" />
+        </div>
+      </div>
+    </header>
+
+    <!-- collection section / three col section -->
+    <section id="collection">
+      <div class="container collection">
+        <!-- collection item 1 -->
+        <article class="collection-item">
+          <img src="./img/robo.png" alt="" class="collection-item-img" />
+          <h2 class="collection-item-title">NFT World</h2>
+          <p class="collection-item-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            praesentium, dicta consectetur illo enim aut.
+          </p>
+        </article>
+
+        <!-- collection item 2 -->
+        <article class="collection-item">
+          <img src="./img/robo.png" alt="" class="collection-item-img" />
+          <h2 class="collection-item-title">NFT World</h2>
+          <p class="collection-item-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            praesentium, dicta consectetur illo enim aut.
+          </p>
+        </article>
+
+        <!-- collection item 3 -->
+        <article class="collection-item">
+          <img src="./img/robo.png" alt="" class="collection-item-img" />
+          <h2 class="collection-item-title">NFT World</h2>
+          <p class="collection-item-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            praesentium, dicta consectetur illo enim aut.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- about / newsletter / two col section -->
+    <section>
+      <div class="container about-newsletter-section">
+        <div class="about" id="about">
+          <h2 class="about-title">About Us!</h2>
+          <p class="about-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            cumque! Fuga dolor architecto quae dicta qui velit quas facilis
+            tempora labore nam officiis, quidem iure, odit culpa officia minima
+            ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque, cumque! Fuga dolor architecto quae dicta qui velit quas
+            facilis tempora labore nam officiis, quidem iure, odit culpa officia
+            minima ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque, cumque! Fuga dolor architecto quae dicta qui velit quas
+            facilis tempora labore nam officiis, quidem iure, odit culpa officia
+            minima ex.
+          </p>
+        </div>
+        <div class="newsletter" id="newsletter">
+          <h2 class="newsletter-title">Get Connected!</h2>
+          <p class="newsletter-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+            doloribus.
+          </p>
+          <input
+            type="email"
+            class="email-input"
+            placeholder="Enter Your Email"
+          />
+          <br />
+          <a href="#" class="btn newsletter-btn">Sign Up for newsletter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container footer">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </footer>
+  </body>
+</html>
