@@ -252,6 +252,10 @@ nav {
 }
 
 @media (max-width: 1000px) {
+  .logo-img {
+    width: 80%;
+  }
+
   /* header */
 
   .header {
@@ -306,7 +310,7 @@ nav {
 
 @media (max-width: 820px) {
   .logo {
-    width: 50%;
+    width: 60%;
   }
 
   .hamburger {
