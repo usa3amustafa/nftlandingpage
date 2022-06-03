@@ -119,6 +119,10 @@ nav {
   opacity: 1;
 }
 
+.dropdown-link {
+  cursor: pointer;
+}
+
 .dropdown-link-item {
   text-decoration: none;
   color: #fefefe;
