@@ -123,6 +123,11 @@ nav {
   cursor: pointer;
 }
 
+.dropdown-link::after {
+  font: var(--fa-font-solid);
+  content: '\f078';
+}
+
 .dropdown-link-item {
   text-decoration: none;
   color: #fefefe;
